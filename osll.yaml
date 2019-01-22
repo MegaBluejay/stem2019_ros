@@ -1,22 +1,66 @@
-img_size: [120,160]
-top_cutoff: 40
-
+#img_size: [120,160]
+#top_cutoff: 40
+#
 # should be an array of 2 elements. The first is the name of the class
 # and the second should be the parameters. 
 # The class should be an abstract instance of LineDetectorInterface
+#detector: 
+#  - line_detector.LineDetectorHSV
+#  - configuration:
+#      dilation_kernel_size: 3
+#      canny_thresholds: [80,200]
+#      hough_threshold: 20
+#      hough_min_line_length: 3
+#      hough_max_line_gap:    1
+#     
+#      hsv_white1:  [0,0,150]
+#      hsv_white2:  [90,8,255]
+#      hsv_yellow1: [24,92,120]
+#      hsv_yellow2: [37,204,255]
+#      hsv_red1:    [0,140,100]
+#      hsv_red2:    [19,255,255]
+#      hsv_red3:    [165,140,100]
+#      hsv_red4:    [180,255,255]
+
+
+img_size: [120,160]
+
+top_cutoff: 40
+
+
+
+# should be an array of 2 elements. The first is the name of the class
+
+# and the second should be the parameters. 
+
+# The class should be an abstract instance of LineDetectorInterface
+
 detector: 
+
   - line_detector.LineDetectorHSV
+
   - configuration:
+
       dilation_kernel_size: 3
+
       canny_thresholds: [80,200]
+
       hough_threshold: 20
+
       hough_min_line_length: 3
+
       hough_max_line_gap:    1
-     
-      hsv_white1:  [0,0,150]
-      hsv_white2:  [90,8,255]
-      hsv_yellow1: [24,92,120]
-      hsv_yellow2: [37,204,255]
+
+
+
+      hsv_white1:  [40,0,225]
+
+      hsv_white2:  [65,51,255]
+
+      hsv_yellow1: [23,38,200]
+
+      hsv_yellow2: [39,97,255]
+
       hsv_red1:    [0,140,100]
       hsv_red2:    [19,255,255]
       hsv_red3:    [165,140,100]
